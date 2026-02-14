@@ -34,9 +34,9 @@
         <div class="nav-container">
             <a href="#" class="logo">MKN</a>
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#" aria-label="Home">Home</a>
+                <a href="#" aria-label="View Projects">Projects</a>
+                <a href="#" aria-label="Contact Me">Contact</a>
             </div>
         </div>
     </nav>

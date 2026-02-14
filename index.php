@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Portfolio of Md. Kaif Nasir, a Full-Stack Web Developer specializing in PHP, MySQL, and secure web systems." />
+    <meta name="keywords"
+        content="Md. Kaif Nasir, Full-Stack Developer, PHP, MySQL, Web Development, Software Engineer" />
     <title>Md. Kaif Nasir | Full-Stack Developer</title>
 
     <!-- Google Fonts -->

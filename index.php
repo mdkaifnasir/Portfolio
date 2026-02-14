@@ -15,6 +15,9 @@
         content="Portfolio of Md. Kaif Nasir, a Full-Stack Web Developer specializing in PHP, MySQL, and secure web systems." />
     <title>Md. Kaif Nasir | Full-Stack Developer</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/image.png" type="image/x-icon">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">

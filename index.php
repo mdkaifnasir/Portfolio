@@ -335,7 +335,7 @@
         </div>
 
         <div class="hero-right">
-            <img src="image/image.png" alt="Developer Avatar">
+            <img src="assets/img/image.png" alt="Developer Avatar">
             <h3>Web Developer</h3>
             <p>PHP • MySQL • Web Systems</p>
         </div>

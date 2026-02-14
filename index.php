@@ -8,6 +8,11 @@
         content="Portfolio of Md. Kaif Nasir, a Full-Stack Web Developer specializing in PHP, MySQL, and secure web systems." />
     <meta name="keywords"
         content="Md. Kaif Nasir, Full-Stack Developer, PHP, MySQL, Web Development, Software Engineer" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Md. Kaif Nasir | Full-Stack Developer" />
+    <meta property="og:description"
+        content="Portfolio of Md. Kaif Nasir, a Full-Stack Web Developer specializing in PHP, MySQL, and secure web systems." />
     <title>Md. Kaif Nasir | Full-Stack Developer</title>
 
     <!-- Google Fonts -->

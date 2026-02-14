@@ -66,7 +66,7 @@
         </div>
 
         <div class="hero-right">
-            <img src="assets/img/image.png" alt="Developer Avatar">
+            <img src="assets/img/image.png" alt="Portrait of Md. Kaif Nasir">
             <h3>Web Developer</h3>
             <p>PHP • MySQL • Web Systems</p>
         </div>

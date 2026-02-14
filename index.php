@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Kaif Nasir | Full-Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --card: rgba(255, 255, 255, 0.06);
+            --border: rgba(255, 255, 255, 0.12);
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --accent: #8b5cf6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #111827, #020617);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(12px);
+            background: rgba(2, 6, 23, 0.6);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 24px;
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        /* HERO */
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            min-height: 100vh;
+            padding: 180px 20px 140px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+        }
+
+        /* ENTRANCE ANIMATION */
+        .hero-left {
+            animation: slideLeft 0.9s ease forwards;
+        }
+
+        .hero-right {
+            animation: slideRight 0.9s ease forwards;
+        }
+
+        @keyframes slideLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: rgba(139, 92, 246, 0.15);
+            color: #c4b5fd;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 46px;
+            line-height: 1.15;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        /* TYPING NAME */
+        .typing-name {
+            display: inline-block;
+            color: var(--accent);
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid var(--accent);
+            width: 0;
+            animation:
+                typing 2.2s steps(14, end) forwards,
+                blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 16ch;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .hero-left p {
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 520px;
+            margin-bottom: 30px;
+        }
+
+        /* STACK HOVER EFFECT */
+        .stack {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .stack span {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .stack span:hover {
+            transform: translateY(-6px) scale(1.04);
+            background: rgba(139, 92, 246, 0.15);
+            border-color: var(--accent);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.25);
+            color: #fff;
+        }
+
+        /* RIGHT CARD */
+        .hero-right {
+            background: linear-gradient(145deg, rgba(139, 92, 246, 0.15), rgba(0, 0, 0, 0.3));
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .hero-right img {
+            width: 170px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.5));
+        }
+
+        .hero-right h3 {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .hero-right p {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* SCROLL INDICATOR */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        .mouse {
+            width: 22px;
+            height: 36px;
+            border: 2px solid var(--muted);
+            border-radius: 20px;
+            margin-top: 8px;
+            position: relative;
+        }
+
+        .mouse::before {
+            content: "";
+            width: 4px;
+            height: 6px;
+            background: var(--muted);
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: wheel 1.6s infinite;
+        }
+
+        @keyframes wheel {
+            to {
+                opacity: 0;
+                transform: translate(-50%, 10px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 160px;
+            }
+
+            .scroll-indicator {
+                display: none;
+            }
+
+            .stack {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">MKN</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <span class="tag">Full-Stack Web Developer</span>
+
+            <h1>
+                Hi, I’m <span class="typing-name">Md. Kaif Nasir</span><br>
+                I build reliable web systems
+            </h1>
+
+            <p>
+                Software Engineer with 4+ years of experience building secure,
+                scalable and user-focused web applications for educational
+                and institutional platforms.
+            </p>
+
+            <div class="stack">
+                <span><i class="fab fa-php"></i> PHP</span>
+                <span><i class="fas fa-database"></i> MySQL</span>
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span><i class="fab fa-wordpress"></i> WordPress</span>
+                <span><i class="fas fa-server"></i> REST APIs</span>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="image/image.png" alt="Developer Avatar">
+            <h3>Web Developer</h3>
+            <p>PHP • MySQL • Web Systems</p>
+        </div>
+
+        <div class="scroll-indicator">
+            SCROLL
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>

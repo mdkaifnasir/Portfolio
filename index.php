@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio of Md. Kaif Nasir, a Full-Stack Web Developer specializing in PHP, MySQL, and secure web systems." />
     <title>Md. Kaif Nasir | Full-Stack Developer</title>
 
     <!-- Google Fonts -->
